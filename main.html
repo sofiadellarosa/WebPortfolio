@@ -6,18 +6,25 @@
     <title>Bootstrap v5 - Alpha1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
-        h1 {
-          text-align: left;
+        .home h1{
+          text-align: center;
           padding-top: 50px;
+          /* padding-left: 100px; */
+        }
+        h2{
+          text-align: left;
+          font-size: 20px;
+          padding-right: 30px;
           padding-left: 100px;
+          padding-bottom: 50px;
         }
-        h2 {
-            text-align: left;
+        .home h2 {
+            text-align: center;
             font-size: 20px;
-            padding-right: 30px;
-            padding-left: 100px;
             padding-bottom: 50px;
+            padding-left: 50px;
         }
+        /* generic h2 --> change this later to be class specific for about me */
         .card {
             margin: 0 auto; /* Added */
             float: none; /* Added */
@@ -28,14 +35,56 @@
             left: 0;
             top: 0;
         }
+        .circular--portrait { 
+            position: relative; 
+            width: 200px; height: 200px; 
+            overflow: hidden; border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        } 
+        .circular--portrait img { 
+            width: 100%; 
+            height: auto; 
+        }
+        .navbar li{
+          margin-right: 10px;
+        }
 
-        
     </style>
 </head>
 <body>
-     <!-- Added nav bar with images of socials and links to that page --> 
-    <ul class="nav justify-content-center">
-        
+  <!--hidden navbar contents -->
+  <div class="collapse" id="navbarToggleExternalContent">
+    <!-- light background -->
+    <div class="bg-light p-4">
+      <ul class="navbar-nav">
+        <!-- menu items -->
+        <li class="nav-item"> 
+          <a class="nav-link text-dark" href="#!">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#!">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#!">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#!">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#!">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- navbar starts here -->
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav flex-row">
+        <!-- Icons and social links -->
         <li class="nav-item">
           <a class="nav-link github" aria-current="page" href="https://github.com/sofiadellarosa">
             <img src="github_logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
@@ -57,43 +106,80 @@
             </a>
         </li>
       </ul>
+    </div>
+  </nav>
 
-      <!-- hidden navbar? trying it out -->
+  
+  <!-- added introduction name --> 
+  <div class="home">
+    <br>
+    <br>
+    <div class="circular--portrait">
+      <img src="Headshot.jpeg" alt="Logo" width="50" height="50">
+    </div> 
+    <h1>Hello!</h1>
+    <h2>I'm Sofia Della Rosa, a Computer Science student at Tulane University</h2>
+  </div>
+  
+
+  <!-- hidden navbar? trying it out -->
+
+
+  <!-- add about me and side bar to navigate to different skills in the about me -->
+  <h2> About me </h2>
+  <h2> </h2>
+    
+
+  <!-- maybe add carousel here? -->
+
+
+
+  <!-- added card with link to pdf resume document --> 
+  <div class="card" style="width: 18rem;">
+    <img src="res_snip.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Access my resume</h5>
+      <p class="card-text">
+        Access and print my resume via google drive. Pdf also available on Github.
+      </p>
+      <a href="https://drive.google.com/file/d/1irK1imoYhAXLecf9vFDvPC1T6626zvG9/view?usp=sharing" class="btn btn-primary">
+        PDF document GDrive
+      </a>
+      <p> </p> 
+      <a href="https://github.com/sofiadellarosa/WebPortfolio/blob/main/Resume%20-%20Sofia%20Della%20Rosa.pdf" class="btn btn-secondary">
+        PDF document Github
+      </a>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <!-- Added nav bar to bottom with images of socials and links to that page --> 
+  <ul class="nav justify-content-center">
       
+    <li class="nav-item">
+      <a class="nav-link github" aria-current="page" href="https://github.com/sofiadellarosa">
+        <img src="github_logo.png" alt="Logo" width="20" height="20" class="d-inline-block align-text-top">
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link linkedin" href="https://www.linkedin.com/in/sofia-della-rosa/">
+        <img src="linkedin_logo.webp" alt="Logo" width="20" height="20" class="d-inline-block align-text-top">
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link insta" href="https://www.instagram.com/sofia_della.rosa/">
+        <img src="insta_logo.webp" alt="Logo" width="20" height="20" class="d-inline-block align-text-top">
+      </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link facebook" href="https://www.facebook.com/sofia.dellarosa.359/">
+            <img src="facebook_logo.png" alt="Logo" width="20" height="20" class="d-inline-block align-text-top">
+        </a>
+    </li>
+  </ul>
 
-       <!-- added introduction name --> 
-      <h1> Hello! </h1>
-      <h2> I'm Sofia Della Rosa, a Computer Science student at Tulane University </h2>
-
-      <!-- add about me and side bar to navigate to different skills in the about me -->
-      <h2> About me </h2>
-      <h2> </h2>
-      
-
-      <!-- maybe add carousel here? -->
-
-
-
-       <!-- added card with link to pdf resume document --> 
-      <div class="card" style="width: 18rem;">
-        <img src="res_snip.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Access my resume</h5>
-          <p class="card-text">
-            Access and print my resume via google drive. Pdf also available on Github.
-          </p>
-          <a href="https://drive.google.com/file/d/1irK1imoYhAXLecf9vFDvPC1T6626zvG9/view?usp=sharing" class="btn btn-primary">
-            PDF document GDrive
-          </a>
-          <p> </p> 
-          <a href="https://github.com/sofiadellarosa/WebPortfolio/blob/main/Resume%20-%20Sofia%20Della%20Rosa.pdf" class="btn btn-secondary">
-            PDF document Github
-          </a>
-        </div>
-      </div>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
