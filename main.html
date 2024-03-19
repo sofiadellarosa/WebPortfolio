@@ -11,12 +11,18 @@
           padding-top: 50px;
           /* padding-left: 100px; */
         }
-        h2{
+        .About h1{
+          text-align: left;
+          font-size: 30px;
+          padding-right: 100px;
+          padding-left: 100px;
+        }
+        .About h2{
           text-align: left;
           font-size: 20px;
-          padding-right: 30px;
+          padding-right: 100px;
           padding-left: 100px;
-          padding-bottom: 50px;
+          padding-bottom: 10px; 
         }
         .home h2 {
             text-align: center;
@@ -36,6 +42,7 @@
             top: 0;
         }
         .circular--portrait { 
+            margin-top: 70px;
             position: relative; 
             width: 200px; height: 200px; 
             overflow: hidden; border-radius: 50%;
@@ -54,7 +61,7 @@
 </head>
 <body>
   <!--hidden navbar contents -->
-  <div class="collapse" id="navbarToggleExternalContent">
+  <div class="collapse fixed-top" id="navbarToggleExternalContent">
     <!-- light background -->
     <div class="bg-light p-4">
       <ul class="navbar-nav">
@@ -78,7 +85,7 @@
     </div>
   </div>
   <!-- navbar starts here -->
-  <nav class="navbar navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-light bg-light fixed-top">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -120,21 +127,28 @@
     <h1>Hello!</h1>
     <h2>I'm Sofia Della Rosa, a Computer Science student at Tulane University</h2>
   </div>
-  
-
-  <!-- hidden navbar? trying it out -->
-
-
   <!-- add about me and side bar to navigate to different skills in the about me -->
-  <h2> About me </h2>
-  <h2> </h2>
-    
+  <div class="About">
+    <h1> About Me: </h1>
+    <h2> 
+      I'm from Moorestown, NJ, and I look to complete my bachelor of arts in computer science and environmental studies with minors in 
+      management and public health in the spring of 2026. I am interested in pursuing a career in software engineering and joining the 
+      tech industry. I work as an undergraduate teaching assistant for Tulane's Department of Computer Science, where I have furthered 
+      my technical skills and continued professional development. 
+    </h2>
+    <h2>
+      On campus, I hold positions in numerous organizations, such as assistant treasurer for Phi Mu and risk manager for Alpha Kappa Psi 
+      business fraternity. I am also a founding member of a "Girls Who Code" club promoting female involvement in computer science and 
+      information technology. In my free time, I enjoy exploring New Orleans, playing soccer, and caring for house plants.
+    </h2>
+  </div>
 
+    
   <!-- maybe add carousel here? -->
 
-
-
   <!-- added card with link to pdf resume document --> 
+  <br>
+  <br>
   <div class="card" style="width: 18rem;">
     <img src="res_snip.png" class="card-img-top" alt="...">
     <div class="card-body">
