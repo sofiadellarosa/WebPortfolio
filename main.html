@@ -5,79 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap v5 - Alpha1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <style>
-        .home{
-          background-color: #212e40;
-          padding-bottom: 60px;
-          padding-top: 50px;
-        }
-        .home h1{
-          text-align: center;
-          padding-top: 50px;
-          color: 	#F8F8F8;
-          padding-bottom: 15px;
-          /* padding-left: 100px; */
-        }
-        .home h2 {
-            text-align: center;
-            font-size: 20px;
-            /* padding-bottom: 50px; */
-            padding-left: 50px;
-            color:#F8F8F8;
-        }
-        .About{
-          /* background-color: #F8F8F8; */
-          background-color: #F8F8F8;
-          padding-bottom: 50px;
-          padding-top: 120px;
-        }
-        .About h1{
-          text-align: left;
-          font-size: 30px;
-          padding-right: 100px;
-          padding-left: 100px;
-          color: #212e40;
-          /* padding-top: 50px; */
-        }
-        .About h2{
-          text-align: left;
-          font-size: 18px;
-          padding-right: 100px;
-          padding-left: 100px;
-          padding-bottom: 10px; 
-          color: #212e40;
-        }
-        .circular--portrait { 
-            margin-top: 70px;
-            position: relative; 
-            width: 200px; height: 200px; 
-            overflow: hidden; border-radius: 50%; 
-            margin-left: auto;
-            margin-right: auto;
-            outline: 4px solid #F8F8F8;
-        } 
-        .circular--portrait img { 
-            width: 100%; 
-            height: auto; 
-        }
-        .card {
-            margin: 0 auto; /* Added */
-            float: none; /* Added */
-            margin-bottom: 10px; /* Added */
-        }
-        .menu{
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        .collapse ul{
-          padding-top: 50px;
-        }
-        .navbar li{
-          margin-right: 10px;
-        }
-
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
   <!--hidden navbar contents -->
@@ -135,7 +63,6 @@
       </ul>
     </div>
   </nav>
-
   
   <!-- added introduction name --> 
   <div class="home" id="id_home">
@@ -147,7 +74,6 @@
     <h1>Hello! <img src="wave-hello.gif" width="40" height="40"> </h1>
     <h2>I'm Sofia Della Rosa, a Computer Science student at Tulane University</h2>
   </div>
-
 
   <!-- add about me and side bar to navigate to different skills in the about me -->
   <div class="About" id="id_about">
@@ -164,13 +90,12 @@
     </h2>
   </div>
 
-    
-  <!-- maybe add carousel here? -->
+  <!-- adding carousel for images of me -->
 
-  <!-- added card with link to pdf resume document --> 
-  <br>
-  <br>
-  <div class="card" style="width: 18rem;" id="id_resume">
+
+  <!-- added card with link to pdf resume document -->
+  <div class="resume" id="id_resume">
+    <div class="card" style="width: 18rem;">
     <img src="res_snip.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Access my resume</h5>
@@ -184,11 +109,9 @@
       <a href="https://github.com/sofiadellarosa/WebPortfolio/blob/main/Resume%20-%20Sofia%20Della%20Rosa.pdf" class="btn btn-secondary">
         PDF document Github
       </a>
+      </div>
     </div>
   </div>
-
-  <br>
-  <br>
 
   <!-- Added nav bar to bottom with images of socials and links to that page --> 
   <ul class="nav justify-content-center">
