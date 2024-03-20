@@ -41,7 +41,7 @@ body{
     background-color: #F8F8F8;
     padding-bottom: 50px;
     padding-top: 120px;
-    padding-bottom:150px;
+    padding-bottom:100px;
   }
 .About h1{
     text-align: left;
@@ -81,8 +81,8 @@ figcaption{
 }
 .Skills{
   padding-top: 60px;
-  padding-bottom: 100px;
-  background-color: #e5f2ff;
+  padding-bottom: 30px;
+  background-color: #F8F8F8;
 }
 .Skills h1{
   text-align: center;
@@ -138,14 +138,34 @@ figcaption{
     margin-bottom: 10px; /* Added */
   }
 .resume{
+    background-color: #F8F8F8;
     padding-top: 100px;
-    padding-bottom: 30px;
+    padding-bottom: 10px; 
   }
 .menu{
       position: absolute;
       left: 0;
       top: 0;
   }
+.resume h1{
+  text-align: center;
+  /* margin-left: 5%; */
+  font-size: 35px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 20px; 
+  color: #212e40;
+}
+.contact_me{
+  background-color: #F8F8F8;
+  padding-top:100px;
+}
+.contact_me .form{
+  text-align: center;
+}
+.bottom_nav{
+  background-color: #F8F8F8;
+}
 .collapse ul{
     padding-top: 50px;
   }
