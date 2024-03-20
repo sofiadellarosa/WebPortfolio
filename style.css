@@ -19,7 +19,7 @@ body{
   }
 .home{
     background-color: #212e40;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
     padding-top: 50px;
   }
 .home h1{
@@ -41,7 +41,7 @@ body{
     background-color: #F8F8F8;
     padding-bottom: 50px;
     padding-top: 120px;
-    padding-bottom:100px;
+    padding-bottom:150px;
   }
 .About h1{
     text-align: left;
@@ -65,12 +65,12 @@ body{
     padding-bottom: 10px; 
     color: #212e40;
   }
-figure{
+.images figure{
     padding-top: 20px;
     margin:10px;
     display: inline-block;
 }
-figure img:hover{
+.images figure img:hover{
     transform:scale(1.5);
     box-shadow: 0 32px 75px rgba(68, 77, 136, .7);
     transition:1s ease;
@@ -78,6 +78,59 @@ figure img:hover{
 figcaption{
     color:#212e40;
     font-family: Calibri;
+}
+.Skills{
+  padding-top: 60px;
+  padding-bottom: 100px;
+  background-color: #e5f2ff;
+}
+.Skills h1{
+  text-align: center;
+  font-size: 35px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+  color: #212e40;
+  /* text-decoration: wavy underline 2.5px; */
+  /* padding-top: 50px; */
+}
+.Skills h2{
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 25px;
+  padding-top: 50px;
+  color: #212e40;
+  text-decoration: underline;
+}
+.Skills .Skills_container{
+  margin-left:20%;
+  margin-right: 20%;
+}
+.Skills figure{
+  display: inline-block;
+  margin:10px;
+}
+.Skills img{
+  width: auto;
+  height: 60px;
+}
+.Skills img:hover{
+  transform:scale(.8);
+  /* box-shadow: 0 32px 75px rgba(68, 77, 136, .7); */
+  transition:all .8s ease;
+}
+.Skills .soft_skills{
+  text-align: center;
+}
+.Skills ul{
+  margin-left: 10%;
+  margin-right: 11%;
+  text-align: center;
+  text-wrap: pretty;
+}
+.Skills li{
+  display: inline;
+  font-size: 18px;
 }
 .card {
     margin: 0 auto; /* Added */
