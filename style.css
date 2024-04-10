@@ -70,11 +70,12 @@ body{
     margin:10px;
     display: inline-block;
 }
-.images figure img:hover{
-    transform:scale(1.5);
+/* maybe change this  */
+/* .images figure img:hover{
+    transform:scale(1.2);
     box-shadow: 0 32px 75px rgba(68, 77, 136, .7);
     transition:1s ease;
-}
+} */
 figcaption{
     color:#212e40;
     font-family: Calibri;
@@ -105,6 +106,10 @@ figcaption{
 .Skills .Skills_container{
   margin-left:20%;
   margin-right: 20%;
+  /* fade in  */
+  /* animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
 }
 .Skills figure{
   display: inline-block;
@@ -122,12 +127,24 @@ figcaption{
 .Skills .soft_skills{
   text-align: center;
 }
+
 .Skills ul{
   margin-left: 10%;
   margin-right: 11%;
   text-align: center;
   text-wrap: pretty;
+  /* trying fade in  */
 }
+/* @keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+} */
+
 .Skills li{
   display: inline;
   font-size: 18px;
@@ -172,6 +189,17 @@ figcaption{
 .navbar li{
     margin-right: 10px;
   }
+.hidden{
+  background-color: #618394;
+}
+.hidden .navbar-nav{
+  margin-left: 20px;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+.hidden .navbar-nav .nav-link{
+  color:#F8F8F8;
+}
 
 
    
